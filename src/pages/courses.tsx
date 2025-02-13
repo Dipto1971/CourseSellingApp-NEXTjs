@@ -2,7 +2,7 @@ import { Button, Card, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router.js";
-import { Course } from "@/store/atoms/course.js";
+import type { Course } from "@/store/atoms/course.js";
 import { NEXT_URL } from "@/config";
 
 function Courses() {

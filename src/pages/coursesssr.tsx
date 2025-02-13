@@ -58,6 +58,7 @@ export async function getServerSideProps() {
   const response = await axios.get(`${NEXT_URL}/api/admin/courses/`, {
     headers: {
       // Authorization: `Bearer ${localStorage.getItem('token')}`
+      // this can not be done because localStorage is not available on the server,to achieve this we can use cookies
     },
   });
   console.log(response.data);
